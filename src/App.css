@@ -97,6 +97,7 @@ input:focus {
   .timer{
     align-items: flex-start !important;
     margin-top: 20px !important;
+    font-size: 15px !important;
   }
   .Locker-circle{
     height: 400px !important;
