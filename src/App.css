@@ -1,0 +1,104 @@
+.Locker-Bg {
+  background: url(./Assets/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.locker-fade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.locker-fade::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+}
+.Locker-circle {
+  aspect-ratio: 1/1;
+  height: 400px !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px 5px cyan;
+  z-index: 2;
+}
+
+.Locker-circle::before {
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  border: 4px solid cyan;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.89)),
+    url(./Assets/rc-xyz-nft-gallery--o90yRQoXAM-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input {
+  color: cyan !important;
+  border: 1px solid cyan;
+  background: transparent;
+  outline: none;
+  padding: 12px 20px !important;
+  font-size: 20px !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+.enter-lab {
+  background-color: cyan;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.entering {
+  animation: fadeIn 5s ease-in-out; 
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .timer{
+    align-items: flex-start !important;
+    margin-top: 20px !important;
+  }
+  .Locker-circle{
+    height: 400px !important;
+  }
+}
